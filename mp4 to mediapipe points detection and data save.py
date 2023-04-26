@@ -15,8 +15,8 @@ def write_landmarks_to_csv(landmarks, frame_number, csv_data):
         csv_data.append([frame_number, mp_pose.PoseLandmark(idx).name, landmark.x, landmark.y, landmark.z])
     print("\n")
 
-video_path = 'C:\\Users\\Dell\\Downloads\\Sweat points for stretches.mp4'
-output_csv = 'C:\\Users\\Dell\\Pictures\\Sweat points for stretches.csv'
+video_path = 'path_to_your_mp4_file'
+output_csv = 'path_where_you_want_to_store_your_csv_file'
 
 # Initialize MediaPipe Pose and Drawing utilities
 mp_pose = mp.solutions.pose
